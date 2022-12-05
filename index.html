@@ -1,10 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8"
+<meta charset="utf-8">
 <title>Kelso Blakely Portfolio</title>
 <link href="styleSheet.css" rel="stylesheet" type="text/css">
+<link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-<
+<div class="topnav" id="navBar">
+	<a href="index.html" class="active">Home</a>
+	<a href="about.html">About Me</a>
+	<div class="dropdown">
+		<button class="dropbtn">My Projects
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class = "dropContent">
+			<a href="projects.html">My Projects</a>
+		</div>
+	</div>
+	<a href="javascript:void(0);" class="icon" onclick="responsiveNav()"> <i class="fa fa-bars"></i></a>
+</div>
+<script>
+function responsiveNav() {
+	var x = document.getElementById("navBar");
+	if (x.className === "topnav") {
+		x.className += " responsive";
+	} else {
+		x.className = "topnav";
+	}
+}
+</script>
+<div class="bgimg-1">
+	<div class="caption">
+		<span class="border">Kelso Blakely Portfolio</span>
+	</div>
+</div>
+<div class="break">
+	<p>Hello there and welcome to my portfolio of work! Contained within are links to many of the programming projects that I have worked on, as well as a display of the photos that I have taken. Enjoy your stay!</p>
+</div>
+<div class="bgimg-2">
+	<div class="caption">
+		<span class="border">Photos on this page taken from Flatttop Mtn Trail</span>
+	</div>
+</div>
+</body>
