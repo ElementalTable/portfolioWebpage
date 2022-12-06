@@ -1,6 +1,9 @@
 @charset "utf-8";
 
+body,
 html {
+    height: 100%;
+    margin: 0;
     font-size: 100%;
     /* Default PX for webpage is 16px */
     font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
@@ -37,7 +40,7 @@ html {
 }
 
 @media screen and (max-width: 35.29em) {
-    .topnav a:not(:first-child) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
         display: none;
     }
 
@@ -59,6 +62,20 @@ html {
     .topnav.responsive a {
         float: none;
         display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+
+    .topnav.responsive .dropContent {
+        position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
         text-align: left;
     }
 }
@@ -90,12 +107,6 @@ html {
 
 .dropdown:hover .dropContent {
     display: block;
-}
-
-body,
-html {
-    height: 100%;
-    margin: 0;
 }
 
 .bgimg-1,
@@ -148,7 +159,7 @@ html {
 .break {
     color: #6E6A6F;
     background-color: #D4D2D5;
-    padding: 3.125em 5em;
+    padding: 1em 3em;
     text-align: justify;
 }
 
@@ -156,4 +167,13 @@ html {
     float: none;
     display: block;
     text-align: left;
+}
+
+#i1 {
+    font-size: 120%;
+    letter-spacing: 0.25em;
+}
+
+.show {
+    display:block;
 }
