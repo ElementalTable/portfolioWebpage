@@ -1,9 +1,13 @@
 @charset "utf-8";
 
+html {
+    font-size: 100%; /* Default PX for webpage is 16px */
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+
 .topnav {
 	background-color: #6E6A6F;
 	overflow: hidden;
-	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 }
 
 .topnav a {
@@ -11,9 +15,8 @@
 	display: block;
 	color: #f2f2f2;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 0.82em 0.94em;
 	text-decoration: none;
-    font-size: 17px;
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn, .dropContent a:hover {
@@ -30,7 +33,7 @@
 	display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 35.29em) {
 	.topnav a:not(:first-child) {display: none;}
 	.topnav a.icon {
 		float: right;
@@ -55,11 +58,11 @@
 }
 
 .dropdown .dropbtn {
-	font-size: 17px;
+    font-size: inherit;
 	border: none;
 	outline: none;
 	color: white;
-	padding: 14px 16px;
+	padding: 0.82em 0.94em;
 	background-color: inherit;
 	font-family: inherit;
 	margin: 0;
@@ -68,8 +71,9 @@
 .dropContent {
 	display: none;
 	position: absolute;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #f2f2f2;
+	min-width: 8em;
+	box-shadow: 0em 0.47em 0.94em 0em rgba(0,0,0,0.2);
 	z-index: 1;
 }
 
@@ -113,14 +117,14 @@ body, html {
 .caption span.border {
 	background-color: #111;
 	color: #fff;
-	padding: 18px;
-	font-size: 25px;
-	letter-spacing: 10px;
+	padding: 0.72em;
+	font-size: 156%;
+	letter-spacing: 0.4em;
 	font-weight: 500;
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 }
 
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-device-width: 64em) {
 	.bgimg-1, .bgimg-2 {
 		background-attachment: scroll;
 	}
@@ -129,6 +133,6 @@ body, html {
 .break {
 	color: #6E6A6F;
 	background-color: #D4D2D5;
-	padding: 50px 80px;
+	padding: 3.125em 5em;
 	text-align: justify;
 }
