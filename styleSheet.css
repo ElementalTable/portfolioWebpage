@@ -136,3 +136,9 @@ body, html {
 	padding: 3.125em 5em;
 	text-align: justify;
 }
+
+.dropContent a {
+    float: none;
+    display: block;
+    text-align: left;
+}
