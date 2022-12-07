@@ -39,47 +39,6 @@ html {
     display: none;
 }
 
-@media screen and (max-width: 35.29em) {
-    .topnav a:not(:first-child), .dropdown .dropbtn {
-        display: none;
-    }
-
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-
-    .topnav.responsive {
-        position: relative;
-    }
-
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-
-    .topnav.responsive .dropdown {
-        float: none;
-    }
-
-    .topnav.responsive .dropContent {
-        position: relative;
-    }
-
-    .topnav.responsive .dropdown .dropbtn {
-        display: block;
-        width: 100%;
-        text-align: left;
-    }
-}
-
 .dropdown {
     float: left;
     overflow: hidden;
@@ -148,14 +107,6 @@ html {
     font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 }
 
-@media only screen and (max-device-width: 64em) {
-
-    .bgimg-1,
-    .bgimg-2 {
-        background-attachment: scroll;
-    }
-}
-
 .break {
     color: #6E6A6F;
     background-color: #D4D2D5;
@@ -175,5 +126,96 @@ html {
 }
 
 .show {
-    display:block;
+    display: block;
+}
+
+#gallery {
+    line-height: 0;
+    column-count: 5;
+    column-gap: 0.3125em;
+}
+
+#gallery img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.3125em;
+}
+
+/*MEDIA QUEARIES*/
+/*600px*/
+@media screen and (max-width: 37.5em) {
+
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+
+    .topnav.responsive .dropContent {
+        position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    #gallery {
+        column-count: 1;
+    }
+}
+
+/*800px*/
+@media screen and (max-width: 50em) {
+    #gallery {
+        column-count: 2;
+    }
+}
+
+/*1000px*/
+@media screen and (max-width: 62.5em) {
+    #gallery {
+        column-count: 3;
+    }
+}
+
+/*1200px*/
+@media screen and (max-width: 75em) {
+    #gallery {
+        column-count: 4;
+    }
+}
+
+/*1024px*/
+@media only screen and (max-device-width: 64em) {
+
+    .bgimg-1,
+    .bgimg-2 {
+        background-attachment: scroll;
+    }
 }
