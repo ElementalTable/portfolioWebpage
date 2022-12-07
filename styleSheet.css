@@ -191,21 +191,21 @@ html {
 }
 
 /*800px*/
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 50em) and (min-width: 37.5em) {
     #gallery {
         column-count: 2;
     }
 }
 
 /*1000px*/
-@media screen and (max-width: 62.5em) {
+@media screen and (max-width: 62.5em) and (min-width: 50em) {
     #gallery {
         column-count: 3;
     }
 }
 
 /*1200px*/
-@media screen and (max-width: 75em) {
+@media screen and (max-width: 75em) and (min-width: 62.5em) {
     #gallery {
         column-count: 4;
     }
