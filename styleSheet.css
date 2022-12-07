@@ -133,12 +133,54 @@ html {
     line-height: 0;
     column-count: 5;
     column-gap: 0.3125em;
+    margin-top: 0.3125em;
 }
 
 #gallery img {
     width: 100%;
     height: auto;
     margin-bottom: 0.3125em;
+}
+
+.about {
+    column-count: 2;
+    column-gap: normal;
+    column-rule-style: solid;
+    column-rule-color: blueviolet;
+    margin: 0.25em;
+}
+
+.stickyImg img {
+
+}
+
+.card {
+    box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.2);
+    max-width: 18.75em;
+    text-align: center;
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 0.5em;
+}
+
+.major {
+    color: grey;
+    font-size: 18px;
+}
+
+.writeup {
+    margin: 0.4em;
+}
+
+table {
+    table-layout: fixed;
 }
 
 /*MEDIA QUEARIES*/
