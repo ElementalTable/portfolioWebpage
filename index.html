@@ -35,7 +35,11 @@
         </div>
         <a href="javascript:void(0);" class="icon" onclick="responsiveNav()"> <i class="fa-solid fa-bars"></i></a>
     </div>
-    <script>
+        <script>
+        window.onscroll = function() {
+            stickyNav();
+        };
+
         function responsiveNav() {
             var x = document.getElementById("navBar");
             if (x.className === "topnav") {
@@ -44,19 +48,31 @@
                 x.className = "topnav";
             }
         }
-        function dropDown(){
+
+        function dropDown() {
             document.getElementById("dropBar").classList.toggle("show");
         }
         window.onclick = function(event) {
             if (!event.target.matches('.dropbtn')) {
                 var dropdowns = document.getElementsByClassName("dropContent");
                 var i;
-                for(i = 0; i < dropdowns.length; i++){
+                for (i = 0; i < dropdowns.length; i++) {
                     var openDropdown = dropdowns[i];
-                    if(openDropdown.classList.contains('show')){
+                    if (openDropdown.classList.contains('show')) {
                         openDropdown.classList.remove('show');
                     }
                 }
+            }
+        }
+
+        var navbar = document.getElementById("navBar");
+        var sticky = navbar.offsetTop;
+
+        function stickyNav() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
             }
         }
     </script>

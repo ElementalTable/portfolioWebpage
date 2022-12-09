@@ -68,6 +68,12 @@ html {
     display: block;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .bgimg-1,
 .bgimg-2 {
     position: relative;
@@ -91,7 +97,7 @@ html {
 .header {
     width: 100%;
     background-image: url(Assets/Images/longsPeakDecent.jpg);
-    height: 25.3em;
+    height: 15em;
     position: relative;
     background-position: center;
     background-size: cover;
