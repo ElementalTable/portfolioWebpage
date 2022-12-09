@@ -177,7 +177,6 @@ html {
     box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
     max-width: 18.75em;
     text-align: center;
-    break-inside: avoid;
 }
 
 .card a {
@@ -206,8 +205,10 @@ html {
     padding: 0.25em;
 }
 
-.container p {
-    padding: 0.25em;
+#writeup {
+    padding: 0.25em 0.25em 0.25em 0.75em;
+    width: 100%;
+    margin: 0em;
 }
 
 /*MEDIA QUEARIES*/
