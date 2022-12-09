@@ -144,17 +144,21 @@ html {
     display: block;
 }
 
-#gallery {
+.gallery {
     line-height: 0;
     column-count: 5;
     column-gap: 0.3125em;
     margin-top: 0.3125em;
 }
 
-#gallery img {
+.gallery img {
     width: 100%;
     height: auto;
     margin-bottom: 0.3125em;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
 }
 
 .about {
