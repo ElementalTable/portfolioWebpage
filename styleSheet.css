@@ -165,14 +165,21 @@ html {
     margin: 0.25em;
 }
 
-.stickyImg img {
+.stickyImg img {}
 
+.block2section {
+    column-count: 2;
+    column-gap: normal;
+    margin: 0.25em;
 }
 
 .card {
-    box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
     max-width: 18.75em;
     text-align: center;
+    column-span: 1;
+    break-inside: avoid;
+
 }
 
 .card a {
@@ -192,12 +199,12 @@ html {
 
 .writeup {
     margin: 0.4em;
+
 }
 
 table {
     table-layout: fixed;
 }
-
 /*MEDIA QUEARIES*/
 /*1024px*/
 @media only screen and (max-device-width: 64em) {
