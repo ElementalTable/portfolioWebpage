@@ -9,6 +9,10 @@ html {
     font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 }
 
+p {
+    padding: 0.25em;
+}
+
 .topnav {
     background-color: #6E6A6F;
     overflow: hidden;
@@ -169,12 +173,15 @@ html {
     margin: 0.25em;
 }
 
-.stickyImg img {}
-
 .block2section {
     column-count: 2;
     column-gap: normal;
     margin: 0.25em;
+    display: block;
+}
+
+.block2section img {
+    width: 100%;
 }
 
 .card {
@@ -213,6 +220,24 @@ html {
     padding: 0.25em 0.25em 0.25em 0.75em;
     width: 100%;
     margin: 0em;
+}
+
+.button {
+    text-decoration: none;
+    border: 0.01em solid #000;
+    color: #000;
+    background: #e6e4e4;
+    padding: 0.25em;
+    border-radius: 0.0625em;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width: max-content;
+    display: block;
 }
 
 /*MEDIA QUEARIES*/
@@ -290,6 +315,10 @@ html {
     }
 
     #gallery {
+        column-count: 1;
+    }
+
+    .block2section {
         column-count: 1;
     }
 }
