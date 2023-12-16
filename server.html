@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kelso Blakely Portfolio</title>
+    <link href="styleSheet.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="Assets/fontawesome-free-6.2.1-web/css/fontawesome.css">
+    <link rel="stylesheet" href="Assets/fontawesome-free-6.2.1-web/css/brands.css">
+    <link rel="stylesheet" href="Assets/fontawesome-free-6.2.1-web/css/solid.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="caption">
+            <span class="border">Kelso Blakely</span>
+        </div>
+    </div>
+    <div class="topnav" id="navBar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact Me</a>
+        <a href="gallery.html">Photo Gallery</a>
+        <div class="dropdown">
+            <button onclick="dropDown()" class="dropbtn">My Projects
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div class="dropContent" id="dropBar">
+                <a href="portfolio.html">Portfolio Website</a>
+                <a href="detector.html">detectorCounts</a>
+                <a href="2k20MatchScouting.html">FRC 2020 Match Scouting</a>
+                <a href="2k19MatchScouting.html">FRC 2019 Match Scouting</a>
+                <a href="miscR.html">Miscellaneous R Projects</a>
+                <a href="server.html">Selfhosting</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="responsiveNav()"> <i class="fa-solid fa-bars"></i></a>
+    </div>
+    <script>
+        window.onscroll = function() {
+            stickyNav();
+        };
+
+        function responsiveNav() {
+            var x = document.getElementById("navBar");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        function dropDown() {
+            document.getElementById("dropBar").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropContent");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        var navbar = document.getElementById("navBar");
+        var sticky = navbar.offsetTop;
+
+        function stickyNav() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    <div class="block3section">
+    <img src="Assets/Images/server/serverInside.jpg">
+    <p>Pictured here is my server that this website and my other selfhosted services are running off of. This particular hardware was handed down to me, and has a Intel I7-6700K, 16 GB DDR4 memory, and 2 Nvidia Quadro K620 graphics cards. This is far more than enough compute power for the foressable future for me and my server needs.
+    <br>
+    I have been doing selfhosting projects since I was in FRC in 2020, but I have only really had my own server since 2022. Before the current server I was using a Lenovo ThinkStation tiny pc with a Intel I5 VPRO that was doubling as a home theater PC for my parents. That server still exists as a backup to my main and ensures that there is some level of redundancy for my dynamic dns service that I rely on to maintain a remote connection.
+    <br>
+    The new server is currently running Proxmox VE that provides 3 LXCs for my primary services. The old server is currently running Ubuntu 22.04 LTS.
+    <br>
+    I do plan on upgrading the RAM in the new server as that has become a limiting factor somewhat recently as I added another game server to my stack that started to cause some issues due to a lack of memory.</p>
+    </div>
+</body>

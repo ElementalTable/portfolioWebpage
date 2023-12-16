@@ -184,6 +184,17 @@ p {
     width: 100%;
 }
 
+.block3section {
+    column-count: 3;
+    column-gap: normal;
+    margin: 0.5em;
+    display: block;
+}
+
+.block3section img{
+    width: 100%;
+}
+
 .card {
     box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
     max-width: 18.75em;
