@@ -78,13 +78,54 @@
         }
     </script>
     <div class="block3section">
+        <span>
     <img src="Assets/Images/server/serverInside.jpg">
-    <p>Pictured here is my server that this website and my other selfhosted services are running off of. This particular hardware was handed down to me, and has a Intel I7-6700K, 16 GB DDR4 memory, and 2 Nvidia Quadro K620 graphics cards. This is far more than enough compute power for the foressable future for me and my server needs.
+    </span>
+    <span>
+    <p>Pictured here is my server that this website and my other selfhosted services are running off of. This particular hardware was handed down to me, and has a Intel I7-6700K, 16 GB DDR4 memory, and 2 Nvidia Quadro K620 graphics cards. This is far more than enough compute power for the forseeable future for me and my server needs.
     <br>
-    I have been doing selfhosting projects since I was in FRC in 2020, but I have only really had my own server since 2022. Before the current server I was using a Lenovo ThinkStation tiny pc with a Intel I5 VPRO that was doubling as a home theater PC for my parents. That server still exists as a backup to my main and ensures that there is some level of redundancy for my dynamic dns service that I rely on to maintain a remote connection.
+    I have been doing selfhosting projects since I was in FRC in 2020, but I have only really had my own server since 2022. Before the current server I was using a Lenovo ThinkStation M73 with a Intel I5-4570T that was & is doubling as a home theater PC for my parents (pictured below). That server still exists as a backup to my main and ensures that there is some level of redundancy for my dynamic dns service that I rely on to maintain a remote connection.
     <br>
     The new server is currently running Proxmox VE that provides 3 LXCs for my primary services. The old server is currently running Ubuntu 22.04 LTS.
     <br>
     I do plan on upgrading the RAM in the new server as that has become a limiting factor somewhat recently as I added another game server to my stack that started to cause some issues due to a lack of memory.</p>
+    </span>
+    <span>
+    <img src="Assets/Images/server/moxy.jpg">
+    </span> 
+    </div>
+    <hr>
+    <div class="block3section">
+        <span>
+            <h3>Services</h3>  
+            <ul>
+                <li>Jellyfin & Plex</li>
+                <li>2 Minecraft Servers</li>
+                <li>Empyrion Server (Intermittent)</li>
+                <li>BeamMP Server</li>
+                <li>Immich</li>
+                <li>Clipable</li>
+                <li>Joplin</li>
+                <li>AdGuard Home</li>
+                <li>Caddy</li>
+                <li>Grafana & Prometheus</li>
+                <li>DuckDNS</li>
+            </ul>
+        <p>
+            All of these services are running in some form of container, wether that be a docker container or a LXC on the proxmox host. All the docker containers are configured with docker compose files that I have version controlled, and the LXC containers have been configured with a proxmox helper script. I use many of these services on a almost daily basis & they have proven their value to me.
+            <br>
+            I highly recommend Joplin in particular. One of the best open source note taking service stacks in my opinion.
+        </p>
+        </span>
+        <span>
+        <figure>
+        <img src="Assets/Images/server/htpc.jpg" alt="HTPC">
+        </figure>  
+        </span>
+        <span>
+            <p>
+                Selfhosting has become a major hobby of mine over the course of 2023 especially, as it allows me to exercise the skills that I have developed and that are rarely used in my degree, but are major interests of mine. I enjoy the server projects because often times they are less intensive than programming projects tend to be. This means that I can have a project up and running in a few hours and be using the service to meet some need of mine. I love selfhosting for the freedom and control that it provides me. 
+            </p>
+        </span>
     </div>
 </body>

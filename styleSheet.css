@@ -176,7 +176,7 @@ p {
 .block2section {
     column-count: 2;
     column-gap: normal;
-    margin: 0.25em;
+    margin: 0.5em;
     display: block;
 }
 
