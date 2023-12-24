@@ -268,22 +268,8 @@ p {
     }
 }
 
-/*1000px*/
-@media screen and (max-width: 62.5em) {
-    #gallery {
-        column-count: 3;
-    }
-}
-
-/*800px*/
-@media screen and (max-width: 50em) {
-    #gallery {
-        column-count: 2;
-    }
-}
-
 /*600px*/
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 60em) {
 
     .topnav a:not(:first-child),
     .dropdown .dropbtn {
