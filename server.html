@@ -22,16 +22,18 @@
         <a href="contact.html">Contact Me</a>
         <a href="gallery.html">Photo Gallery</a>
         <div class="dropdown">
+            <div class="active">
             <button onclick="dropDown()" class="dropbtn">My Projects
                 <i class="fa-solid fa-caret-down"></i>
             </button>
+            </div>
             <div class="dropContent" id="dropBar">
                 <a href="portfolio.html">Portfolio Website</a>
                 <a href="detector.html">detectorCounts</a>
                 <a href="2k20MatchScouting.html">FRC 2020 Match Scouting</a>
                 <a href="2k19MatchScouting.html">FRC 2019 Match Scouting</a>
                 <a href="miscR.html">Miscellaneous R Projects</a>
-                <a href="server.html">Selfhosting</a>
+                <a href="server.html" class="active">Selfhosting</a>
             </div>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="responsiveNav()"> <i class="fa-solid fa-bars"></i></a>
@@ -114,7 +116,7 @@
                 <li>NetData</li>
             </ul>
         <p>
-            All of these services are running in some form of container, wether that be a docker container or a LXC on the proxmox host. All the docker containers are configured with docker compose files that I have version controlled, and the LXC containers have been configured with a proxmox helper script. I use many of these services on a almost daily basis & they have proven their value to me.
+            All of these services are running in some form of container, wether that be a docker container or a LXC on the proxmox host. All the docker containers are configured with docker compose files that I have version controlled, and the LXC containers have been configured with a proxmox helper script.
             <br>
             I highly recommend Joplin in particular. One of the best open source note taking service stacks in my opinion.
         </p>

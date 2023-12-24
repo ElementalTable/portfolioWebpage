@@ -7,14 +7,20 @@ html {
     font-size: 100%;
     /* Default PX for webpage is 16px */
     font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    background-color: #292F36;
+    color: white;
 }
 
 p {
     padding: 0.25em;
 }
 
+a {
+    color: #2B9985;
+}
+
 .topnav {
-    background-color: #6E6A6F;
+    background-color: #2B9985;
     overflow: hidden;
 }
 
@@ -35,7 +41,7 @@ p {
 }
 
 .active {
-    background-color: #6C698D;
+    background-color: #B3202B;
     color: white;
 }
 
@@ -266,6 +272,10 @@ p {
     #gallery {
         column-count: 4;
     }
+
+    .block3section {
+        column-count: 2;
+    }
 }
 
 /*600px*/
@@ -316,6 +326,10 @@ p {
     }
 
     .block2section {
+        column-count: 1;
+    }
+
+    .block3section {
         column-count: 1;
     }
 }
