@@ -119,11 +119,11 @@ a {
     top: 50%;
     width: 100%;
     text-align: center;
-    color: #000;
+    color: #fff;
 }
 
 .caption span.border {
-    background-color: #111;
+    background-color: #2B9985;
     color: #fff;
     padding: 0.72em;
     font-size: 156%;
